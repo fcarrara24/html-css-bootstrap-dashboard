@@ -25,7 +25,7 @@
         <img src="img/logo.svg" alt="" />
       </div>
 
-      <div class="svg-container mx-4 mobile-visible">
+      <div class="svg-container  mobile-visible">
         <img class="h-100" src="img/mobile-logo.png" alt="" />
       </div>
 
@@ -34,9 +34,20 @@
       <div class="mobile-hidden">
         <i class="fa-solid fa-list-ul"></i>
         <i class="fa-solid fa-circle-question"></i>
-        <i class="fa-solid fa-ellipsis-vertical"></i>
+        <i class="fa-solid fa-ellipsis-vertical">
+
+        </i>
       </div>
-      <i id="bell" class="fa-solid fa-bell d-flex flex-row align-self-center" style="color: goldenrod"></i>
+      <div class="bell-container">
+        <i id="bell" class="fa-solid fa-bell d-flex flex-row align-items-center position-relative h-100 "
+          style="color: goldenrod">
+        </i>
+        <ul class="hover-visible">
+          <li><a href="#" class="text-dark text-decoration-none">Profilo</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Fatturazione</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Logout</a></li>
+        </ul>
+      </div>
     </header>
 
     <main class="debug d-flex">
@@ -67,11 +78,93 @@
           <div class="row">
             <div class="col-4">1</div>
             <div class="col-4">2</div>
-            <div class="col-4">3</div>
+            <div class="col-4">
+
+
+              <!-- placeholder button -->
+              <button>press me</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
           </div>
         </section>
         <div class="container-fluid">
-          <div id="dashboard" class="row debug">
+          <div id="dashboard" class="row debug pt-3">
             <div class="col-lg-8 col-12">
               <div class="card">
                 <div class="card-header">
@@ -84,7 +177,7 @@
 
                       <span>Nome </span>
                     </div>
-                    <div class="table-right d-flex flex-row text-nowrap align-items-center  gap-4">
+                    <div class="table-right d-flex flex-row text-nowrap align-items-center px-2 gap-4 me-4">
                       <div class="table-data">Data Inizio</div>
                       <div class="table-data">ROI</div>
                       <div class="table-data">Stato</div>
@@ -115,9 +208,147 @@
                       </div>
                     </div>
                   </div>
+
+                  <div class="my-row d-flex flex-row justify-content-between align-content-center border-bottom-1">
+                    <div class="table-left d-flex flex-row align-items-center">
+                      <div class="img-container h-100 ">
+                        <img class="h-100 me-2" src="img/class-avatar.jpg" alt="" />
+                      </div>
+                      <span>Classe 73</span>
+                    </div>
+                    <div class="table-right d-flex flex-row text-nowrap align-items-center  gap-3">
+                      <div class="table-data">15 feb 2021</div>
+                      <div class="table-data">20%</div>
+                      <div class="table-data"><span class="badge bg-success">Done</span></div>
+                      <div class="table-data d-flex flex-row ">
+                        <div class=" border border-dark rounded p-1 me-2">
+                          <i class="fa-solid fa-pen" style="color: #6c757d; width: fit-content;"></i>
+                        </div>
+                        <div class=" border border-dark rounded p-1 me-2">
+                          <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="my-row d-flex flex-row justify-content-between align-content-center border-bottom-1">
+                    <div class="table-left d-flex flex-row align-items-center">
+                      <div class="img-container h-100 ">
+                        <img class="h-100 me-2" src="img/class-avatar.jpg" alt="" />
+                      </div>
+                      <span>Classe 73</span>
+                    </div>
+                    <div class="table-right d-flex flex-row text-nowrap align-items-center  gap-3">
+                      <div class="table-data">15 feb 2021</div>
+                      <div class="table-data">20%</div>
+                      <div class="table-data"><span class="badge bg-success">Done</span></div>
+                      <div class="table-data d-flex flex-row ">
+                        <div class=" border border-dark rounded p-1 me-2">
+                          <i class="fa-solid fa-pen" style="color: #6c757d; width: fit-content;"></i>
+                        </div>
+                        <div class=" border border-dark rounded p-1 me-2">
+                          <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="my-row d-flex flex-row justify-content-between align-content-center border-bottom-1">
+                    <div class="table-left d-flex flex-row align-items-center">
+                      <div class="img-container h-100 ">
+                        <img class="h-100 me-2" src="img/class-avatar.jpg" alt="" />
+                      </div>
+                      <span>Classe 73</span>
+                    </div>
+                    <div class="table-right d-flex flex-row text-nowrap align-items-center  gap-3">
+                      <div class="table-data">15 feb 2021</div>
+                      <div class="table-data">20%</div>
+                      <div class="table-data"><span class="badge bg-success">Done</span></div>
+                      <div class="table-data d-flex flex-row ">
+                        <div class=" border border-dark rounded p-1 me-2">
+                          <i class="fa-solid fa-pen" style="color: #6c757d; width: fit-content;"></i>
+                        </div>
+                        <div class=" border border-dark rounded p-1 me-2">
+                          <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="my-row d-flex flex-row justify-content-between align-content-center border-bottom-1">
+                    <div class="table-left d-flex flex-row align-items-center">
+                      <div class="img-container h-100 ">
+                        <img class="h-100 me-2" src="img/class-avatar.jpg" alt="" />
+                      </div>
+                      <span>Classe 73</span>
+                    </div>
+                    <div class="table-right d-flex flex-row text-nowrap align-items-center  gap-3">
+                      <div class="table-data">15 feb 2021</div>
+                      <div class="table-data">20%</div>
+                      <div class="table-data"><span class="badge bg-success">Done</span></div>
+                      <div class="table-data d-flex flex-row ">
+                        <div class=" border border-dark rounded p-1 me-2">
+                          <i class="fa-solid fa-pen" style="color: #6c757d; width: fit-content;"></i>
+                        </div>
+                        <div class=" border border-dark rounded p-1 me-2">
+                          <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="card"></div>
+              <div class="card my-3">
+                <div class="card-header">
+                  <h2>F.A.Q.</h2>
+                </div>
+                <div class="accordion-container">
+                  <div class="accordion d-flex flex-row justify-content-between align-content-center mx-3 my-3">
+                    <div class="fw-medium">Come aggiungere un nuovo studente?</div>
+                    <div><i class="fa-solid fa-angle-down"></i></div>
+                  </div>
+                  <div class="accordion-expand px-4 py-2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, minima nulla consectetur
+                    dignissimos modi quaerat aspernatur iusto praesentium ex mollitia.
+                  </div>
+                </div>
+
+                <div class="accordion-container">
+                  <div class="accordion d-flex flex-row justify-content-between align-content-center mx-3 my-3">
+                    <div class="fw-medium">Come aggiungere un nuovo studente?</div>
+                    <div><i class="fa-solid fa-angle-down"></i></div>
+                  </div>
+                  <div class="accordion-expand px-4 py-2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, minima nulla consectetur
+                    dignissimos modi quaerat aspernatur iusto praesentium ex mollitia.
+                  </div>
+                </div>
+
+                <div class="accordion-container">
+                  <div class="accordion d-flex flex-row justify-content-between align-content-center mx-3 my-3">
+                    <div class="fw-medium">Come aggiungere un nuovo studente?</div>
+                    <div><i class="fa-solid fa-angle-down"></i></div>
+                  </div>
+                  <div class="accordion-expand px-4 py-2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, minima nulla consectetur
+                    dignissimos modi quaerat aspernatur iusto praesentium ex mollitia.
+                  </div>
+                </div>
+
+                <div class="accordion-container">
+                  <div class="accordion d-flex flex-row justify-content-between align-content-center mx-3 my-3">
+                    <div class="fw-medium">Come aggiungere un nuovo studente?</div>
+                    <div><i class="fa-solid fa-angle-down"></i></div>
+                  </div>
+                  <div class="accordion-expand px-4 py-2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, minima nulla consectetur
+                    dignissimos modi quaerat aspernatur iusto praesentium ex mollitia.
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-lg-4 col-12">
               <div class="card">
@@ -125,19 +356,34 @@
                   <h2>Todo</h2>
                 </div>
                 <ul class="list-group">
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" />
-                    <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                  <li class="list-group-item d-flex ">
+                    <input class="form-check-input mx-2 " type="checkbox" value="" id="firstCheckbox" />
+                    <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
                   </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox" />
-                    <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                  <li class="list-group-item d-flex ">
+                    <input class="form-check-input mx-2" type="checkbox" value="" id="secondCheckbox" />
+                    <label class="form-check-label" for="secondCheckbox">Lezione su Boostrap 5 in classe 75</label>
                   </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" />
-                    <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                  <li class="list-group-item d-flex ">
+                    <input class="form-check-input mx-2" type="checkbox" value="" id="thirdCheckbox" />
+                    <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
                   </li>
                 </ul>
+              </div>
+              <div class="card w-100 mt-3">
+                <div class="img-container w-100 ">
+                  <img src="img/stats.jpeg" class="w-100" alt="" srcset="">
+                </div>
+                <div class="graph-bottom ps-3">
+                  <div class="graph-title my-border-bottom">
+                    <h3>Utenti Attivi</h3>
+                    <h5>Lista degli utenti in piattaforma nell'ultimo mese</h5>
+                  </div>
+                  <div class="graph-section my-border-bottom py-3">Gennaio: 1200</div>
+                  <div class="graph-section my-border-bottom py-3">Febbraio: 800</div>
+                  <div class="graph-section my-border-bottom py-3">Marzo: 1500</div>
+                  <div class="graph-section my-border-bottom py-3"><a href="#">Visualizza report approfondito</a></div>
+                </div>
               </div>
             </div>
           </div>
