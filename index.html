@@ -1,148 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Inclusive+Sans&family=Montserrat:wght@500&family=Noto+Sans+Symbols:wght@400;600&family=Oswald:wght@200&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400;500;700&family=Space+Grotesk:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="d-flex flex-row ps-2">
-        <div id="header-right" class="img-container  mobile-hidden">
-            <img src="img/logo.svg" alt="">
-            
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Inclusive+Sans&family=Montserrat:wght@500&family=Noto+Sans+Symbols:wght@400;600&family=Oswald:wght@200&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400;500;700&family=Space+Grotesk:wght@700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="d-flex flex-row ps-2">
+      <div id="header-right" class="img-container mobile-hidden">
+        <img src="img/logo.svg" alt="" />
+      </div>
+
+      <div class="svg-container mx-4 mobile-visible">
+        <img class="h-100" src="img/mobile-logo.png" alt="" />
+      </div>
+
+      <input class="form-control mx-5 my-3" type="search" placeholder="Search" aria-label="Search" />
+
+      <div class="mobile-hidden">
+        <i class="fa-solid fa-list-ul"></i>
+        <i class="fa-solid fa-circle-question"></i>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </div>
+      <i id="bell" class="fa-solid fa-bell d-flex flex-row align-self-center" style="color: goldenrod"></i>
+    </header>
+
+    <main class="debug d-flex">
+      <div id="sidebar" class="debug d-flex flex-column justify-content-between align-items-center">
+        <ul id="top-side">
+          <li class="d-flex flex-row py-3 align-items-center">
+            <i class="fa-solid fa-house" style="color: #ffffff"></i>
+            <div class="mobile-hidden text-light">&nbsp;Home</div>
+          </li>
+          <li class="d-flex flex-row py-3 align-items-center">
+            <i class="fa-solid fa-chart-simple" style="color: #ffffff"></i>
+            <div class="mobile-hidden text-light">&nbsp;Stats</div>
+          </li>
+          <li class="d-flex flex-row py-3 align-items-center">
+            <i class="fa-solid fa-signal" style="color: #ffffff"></i>
+            <div class="mobile-hidden text-light">&nbsp;Signals</div>
+          </li>
+        </ul>
+
+        <div id="bottom-side" class="d-flex flex-row py-3 align-items-center">
+          <i class="fa-solid fa-cog" style="color: #ffffff"></i>
+          <div class="mobile-hidden text-light">&nbsp;Admin</div>
         </div>
+      </div>
 
-        <div class="svg-container mx-4 mobile-visible">
-            <img id="logoSm" src="img/mobile-logo.png" alt="">
-        </div>
-        
-        <input class="form-control mx-5 my-3" type="search" placeholder="Search" aria-label="Search">
+      <div id="main-content" class="debug">
+        <section id="main-nav" class="bg-primary container-fluid">
+          <div class="row">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+            <div class="col-4">3</div>
+          </div>
+        </section>
+        <div class="container-fluid">
+          <div id="dashboard" class="row debug">
+            <div class="col-lg-8 col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h2>Prossime Classi</h2>
+                </div>
+                <div class="my-table">
+                  <!-- titlerow -->
+                  <div class="my-row d-flex flex-row justify-content-between align-content-center ">
+                    <div class="table-left d-flex flex-row align-items-center">
 
-        <div class="mobile-hidden">
-            <i class="fa-solid fa-list-ul"></i>
-            <i class="fa-solid fa-circle-question"></i>
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-
-        </div>
-        <i class="fa-solid fa-bell d-flex flex-row align-self-center" style="color: goldenrod;"></i>
-
-      </header>
-
-
-      <main class="debug d-flex">
-        <div id="sidebar" class="debug d-flex flex-column justify-content-between align-items-center">
-
-
-            <ul id="top-side">
-                <li class="d-flex flex-row py-3 align-items-center ">
-                    <i class="fa-solid fa-house" style="color: #ffffff;"></i>
-                    <div class="mob-hidden text-light">&nbsp;Home</div>
-                </li>
-                <li class="d-flex flex-row py-3 align-items-center">
-                    <i class="fa-solid fa-chart-simple" style="color: #ffffff;"></i>
-                    <div class="mob-hidden text-light">&nbsp;Stats</div>
-                </li>
-                <li class="d-flex flex-row py-3 align-items-center">
-                    <i class="fa-solid fa-signal" style="color: #ffffff;"></i>
-                    <div class="mob-hidden text-light">&nbsp;Signals</div>
-                </li>
-            </ul>
-
-            <div id="bottom-side" class="d-flex flex-row py-3 align-items-center">
-                <i class="fa-solid fa-cog" style="color: #ffffff;"></i>
-                <div class="mobile-hidden text-light">&nbsp;Admin</div>
-            </div>
-        </div>
-
-
-        <div id="main-content" class="debug ">
-            <section id="main-nav" class="bg-primary container-fluid">
-               <div class="row">
-                       <div class="col-4">1</div>
-                       <div class="col-4">2</div>
-                       <div class="col-4">3</div>
-               </div>
-            </section>
-          <div class="container-fluid">
-            <div id="dashboard" class="row debug">
-                <div class="col-lg-8 col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h2>TITOLO</h2>
+                      <span>Nome </span>
+                    </div>
+                    <div class="table-right d-flex flex-row text-nowrap align-items-center  gap-4">
+                      <div class="table-data">Data Inizio</div>
+                      <div class="table-data">ROI</div>
+                      <div class="table-data">Stato</div>
+                      <div class="table-data d-flex flex-row ">
+                        Azioni
+                      </div>
+                    </div>
+                  </div>
+                  <!-- title-row -->
+                  <div class="my-row d-flex flex-row justify-content-between align-content-center border-bottom-1">
+                    <div class="table-left d-flex flex-row align-items-center">
+                      <div class="img-container h-100 ">
+                        <img class="h-100 me-2" src="img/class-avatar.jpg" alt="" />
+                      </div>
+                      <span>Classe 73</span>
+                    </div>
+                    <div class="table-right d-flex flex-row text-nowrap align-items-center  gap-3">
+                      <div class="table-data">15 feb 2021</div>
+                      <div class="table-data">20%</div>
+                      <div class="table-data"><span class="badge bg-success">Done</span></div>
+                      <div class="table-data d-flex flex-row ">
+                        <div class=" border border-dark rounded p-1 me-2">
+                          <i class="fa-solid fa-pen" style="color: #6c757d; width: fit-content;"></i>
                         </div>
-                        <table class="table table-hover">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                        <div class=" border border-dark rounded p-1 me-2">
+                          <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
+                        </div>
+                      </div>
                     </div>
-                    <div class="card"></div>
-                    
+                  </div>
                 </div>
-                <div class="col-lg-4 col-12">
-                    <div class="card">
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                              <label class="form-check-label" for="firstCheckbox">First checkbox</label>
-                            </li>
-                            <li class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                              <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
-                            </li>
-                            <li class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                              <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
-                            </li>
-                          </ul>
-                    </div>
+              </div>
+              <div class="card"></div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h2>Todo</h2>
                 </div>
-
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" />
+                    <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox" />
+                    <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                  </li>
+                  <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" />
+                    <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        
-    </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
-
-

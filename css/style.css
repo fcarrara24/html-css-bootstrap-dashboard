@@ -103,12 +103,17 @@ header{
     
 }
 
-#logoSm{
-    height: 100%;
-}
 
 i{
     font-size: 1.5em;
+    width: 1.5em;
+}
+
+.th-img{
+    
+    background-image: url(../img/class-avatar.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .mobile-hidden{
@@ -121,6 +126,11 @@ i{
     display: none;
 }
 
+.table-left{
+    height: 50px;
+    padding: 7px;
+}
+
 @media screen and (max-width: 1000px) {
     .mobile-hidden{
         display: none;
@@ -129,5 +139,8 @@ i{
     }
     .mobile-visible{
         display: block;
+    }
+    #bell{
+        padding-right: 40px;
     }
 }
