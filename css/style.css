@@ -58,10 +58,76 @@ main{
     
 }
 
-li{
+li {
     padding-left: 0!important;
 }
 
 .fa-solid{
     width: 2em;
+}
+
+.logo-container{
+    width: fit-content;
+    height: auto;
+}
+
+#desktop-logo{
+
+   height: 100%;
+}
+
+#navbarSearch{
+    width: 100%;
+}
+
+#navRight{
+    height: 100%;
+    display: flex;
+    align-content: center;
+}
+
+#navRight li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header{
+    height: var(--header-height);
+}
+
+.svg-container{
+    
+    width: 40px;
+    height: 100%;
+    
+}
+
+#logoSm{
+    height: 100%;
+}
+
+i{
+    font-size: 1.5em;
+}
+
+.mobile-hidden{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mobile-visible{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .mobile-hidden{
+        display: none;
+        
+        
+    }
+    .mobile-visible{
+        display: block;
+    }
 }
