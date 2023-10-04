@@ -175,6 +175,14 @@ i{
     display: block;
 }
 
+#offcanvasRight{
+    width: 50%;
+}
+
+#col-top-center{
+    line-height: 1em;
+}
+
 @media screen and (max-width: 1000px) {
     :root{
         --side-width: 60px;
@@ -190,4 +198,8 @@ i{
     #bell{
         padding-right: 40px;
     }
+    #offcanvasRight{
+        width: 100%;
+    }
+    
 }

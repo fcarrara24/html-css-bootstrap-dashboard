@@ -73,39 +73,65 @@
       </div>
 
       <div id="main-content" class="debug">
-        <section id="main-nav" class="bg-primary container-fluid">
-          <div class="row flex-lg-row">
-            <div class="col-4">1</div>
-            <div class="col-4">2</div>
+        <section id="main-nav" class="bg-primary container-fluid text-light">
+          <div class="row flex-lg-row p-2">
             <div class="col-4">
+              <div class="big-title-top d-flex flex-row align-items-center">
+                <h2>Boolean</h2>
+                <span class="badge badge-primary">Primary</span>
+              </div>
+              <div class="big-title-bot d-flex flex-row align-items-center gap-1 flex-nowrap">
+                <span class="badge">Primary</span>
+                <span class="text-light">>></span>
+                <div class="d-md-block d-lg-none">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="d-md-none d-lg-block d-flex">
+                  <span class="badge bg-gradient">Primary</span>
+                  <span class="badge badge-danger">Danger</span>
+                  <span class="badge bg-black">Primary</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div id="col-top-center">
+                Studenti online negli ultimi 30 minuti
+              </div>
+              <h3>
+                125
+              </h3>
+            </div>
+            <div class="col-4 d-flex justify-content-end">
 
+              <button class="btn btn-primary d-flex flex-row align-center" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <div class="align-self-center me-3">Nuovo Studente</div>
+                <div class="border py-2 rounded ">
+                  <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                </div>
+              </button>
 
-              <!-- placeholder button -->
-              <button>press me</button>
-              <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight">Toggle right offcanvas</button>
-
-              <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight"
+              <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
-                  <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                  <h6 id="offcanvasRightLabel">Inserisci un nuovo studente</h6>
                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body w-100">
-                  <div class="col-md-8 order-md-1  ">
-                    <h4 class="mb-3">Billing address</h4>
+                  <div class="col order-md-1  ">
+
                     <form class="needs-validation" novalidate="">
                       <div class="row">
                         <div class="col-md-6 mb-3">
-                          <label for="firstName">First name</label>
+                          <label for="firstName">Nome</label>
                           <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
                           <div class="invalid-feedback">
                             Valid first name is required.
                           </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                          <label for="lastName">Last name</label>
+                          <label for="lastName">Cognome</label>
                           <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
                           <div class="invalid-feedback">
                             Valid last name is required.
@@ -113,134 +139,113 @@
                         </div>
                       </div>
 
-                      <div class="mb-3">
-                        <label for="username">Username</label>
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">@</span>
+                      <div class="row mb-3">
+                        <div class="col-6">
+                          <label for="username">Email</label>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="username" required="@">
+                            <div class="invalid-feedback" style="width: 100%;">
+                              Your username is required.
+                            </div>
                           </div>
-                          <input type="text" class="form-control" id="username" placeholder="Username" required="">
-                          <div class="invalid-feedback" style="width: 100%;">
-                            Your username is required.
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="password">Password <span class="text-muted"></span></label>
+                          <input type="password" class="form-control" id="email">
+                        </div>
+                      </div>
+
+                      <!-- eamil-2 -->
+
+                      <div class="row mb-3">
+                        <div class="col-6">
+                          <label for="username">Indirizzo Email</label>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="username" required="@">
+                            <div class="invalid-feedback" style="width: 100%;">
+                              Your username is required.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mb-3 col-6">
+                          <label for="password">Password <span class="text-muted"></span></label>
+                          <input type="password" class="form-control" id="email">
+                          <div class="invalid-feedback">
+                            inserire il proprio indirizzo
                           </div>
                         </div>
                       </div>
 
-                      <div class="mb-3">
-                        <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                        <div class="invalid-feedback">
-                          Please enter a valid email address for shipping updates.
-                        </div>
-                      </div>
+                      <!-- indirizzo -->
 
                       <div class="mb-3">
-                        <label for="address">Address</label>
-                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                        <label for="address">indirizzo</label>
+                        <input type="text" class="form-control" id="address" required="">
                         <div class="invalid-feedback">
                           Please enter your shipping address.
                         </div>
                       </div>
 
-                      <div class="mb-3">
-                        <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                      </div>
+
 
                       <div class="row">
-                        <div class="col-md-5 mb-3">
-                          <label for="country">Country</label>
-                          <select class="custom-select d-block w-100" id="country" required="">
-                            <option value="">Choose...</option>
-                            <option>United States</option>
-                          </select>
-                          <div class="invalid-feedback">
-                            Please select a valid country.
-                          </div>
+                        <div class="col-6 mb-3">
+                          <label for="address2">Città</label>
+                          <input type="text" class="form-control" id="address2">
                         </div>
-                        <div class="col-md-4 mb-3">
-                          <label for="state">State</label>
-                          <select class="custom-select d-block w-100" id="state" required="">
-                            <option value="">Choose...</option>
-                            <option>California</option>
+                        <div class="form-group col-md-4">
+                          <label for="inputState">Stato</label>
+                          <select id="inputState" class="form-control">
+                            <option selected>Scegli ...</option>
+                            <option value="1">IT</option>
+                            <option value="2">ES</option>
+                            <option value="3">UK</option>
+
                           </select>
-                          <div class="invalid-feedback">
-                            Please provide a valid state.
-                          </div>
                         </div>
-                        <div class="col-md-3 mb-3">
-                          <label for="zip">Zip</label>
+
+                        <div class="col-2 ">
+                          <label for="zip">CAP</label>
                           <input type="text" class="form-control" id="zip" placeholder="" required="">
                           <div class="invalid-feedback">
                             Zip code required.
                           </div>
                         </div>
                       </div>
-                      <hr class="mb-4">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="same-address">
-                        <label class="custom-control-label" for="same-address">Shipping address is the same as my
-                          billing
-                          address</label>
-                      </div>
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="save-info">
-                        <label class="custom-control-label" for="save-info">Save this information for next time</label>
-                      </div>
-                      <hr class="mb-4">
-
-                      <h4 class="mb-3">Payment</h4>
-
-                      <div class="d-block my-3">
-                        <div class="custom-control custom-radio">
-                          <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked=""
-                            required="">
-                          <label class="custom-control-label" for="credit">Credit card</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                          <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                          <label class="custom-control-label" for="debit">Debit card</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                          <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
-                          <label class="custom-control-label" for="paypal">Paypal</label>
-                        </div>
-                      </div>
                       <div class="row">
-                        <div class="col-md-6 mb-3">
-                          <label for="cc-name">Name on card</label>
-                          <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                          <small class="text-muted">Full name as displayed on card</small>
-                          <div class="invalid-feedback">
-                            Name on card is required
-                          </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                          <label for="cc-number">Credit card number</label>
-                          <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-                          <div class="invalid-feedback">
-                            Credit card number is required
+                        <div class="col mb-3">
+                          <label for="zip">Foto</label>
+
+                          <div class="input-group">
+
+                            <input type="file" class="form-control" id="username" required="@">
+                            <div class="invalid-feedback" style="width: 100%;">
+                              Your username is required.
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-md-3 mb-3">
-                          <label for="cc-expiration">Expiration</label>
-                          <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-                          <div class="invalid-feedback">
-                            Expiration date required
-                          </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                          <label for="cc-expiration">CVV</label>
-                          <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                          <div class="invalid-feedback">
-                            Security code required
-                          </div>
+
+                      <div class="col-auto my-1 mb-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                          <label class="form-check-label" for="autoSizingCheck2">
+                            Seleziona per proseguire
+                          </label>
                         </div>
                       </div>
-                      <hr class="mb-4">
-                      <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+
+                      <div class="d-flex flex-row mb-3">
+                        <button class="btn btn-primary btn-lg btn-block m-1" type="submit">Salva</button>
+                        <button class="btn btn-warning btn-lg btn-block m-1" type="submit">Svuota</button>
+
+                      </div>
                     </form>
                   </div>
                 </div>
