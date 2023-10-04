@@ -198,6 +198,27 @@ td{
     align-items: center;
 }
 
+#top-side li:hover{
+    background-color: #81909d;
+}
+
+#bottom-side:hover{
+    background-color: #81909d;
+}
+
+#offcanvasBtn:hover {
+    background-color: white;
+   
+}
+
+#offcanvasBtn > * {
+    color: white;
+}
+
+#offcanvasBtn:hover > * {
+    color: #165bba;
+}
+
 @media screen and (max-width: 1000px) {
     :root{
         --side-width: 60px;
