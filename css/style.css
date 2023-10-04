@@ -49,7 +49,7 @@ main{
     width: 100%;
     height: calc(100% - var(--header-height));
     
-    /*sticky-fixed -0*/
+    
 }
 
 #sidebar{
@@ -78,11 +78,6 @@ li {
 }
 
 .logo-container{
-    width: fit-content;
-    height: auto;
-}
-
-.img-container{
     width: fit-content;
     height: auto;
 }
@@ -122,15 +117,10 @@ header{
 
 i{
     font-size: 1.5em;
-    width: 1.5em;
+    
 }
 
-.th-img{
-    
-    background-image: url(../img/class-avatar.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
+
 
 .mobile-hidden{
     display: flex;
