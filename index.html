@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Bootstrap Dashboard</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -78,18 +78,18 @@
             <div class="col-4">
               <div class="big-title-top d-flex flex-row align-items-center">
                 <h2>Boolean</h2>
-                <span class="badge badge-primary">Primary</span>
+                <span class="badge btn-dark-blue">Piano blaze</span>
               </div>
               <div class="big-title-bot d-flex flex-row align-items-center gap-1 flex-nowrap">
-                <span class="badge">Primary</span>
+                <span class="badge btn-dark-blue">3 app</span>
                 <span class="text-light">>></span>
-                <div class="d-md-block d-lg-none">
-                  <i class="fa-solid fa-plus"></i>
+                <div class="d-md-block d-lg-none ">
+                  <i id="plus-options" class="fa-solid fa-plus btn-dark-blue"></i>
                 </div>
-                <div class="d-md-none d-lg-block d-flex">
-                  <span class="badge bg-gradient">Primary</span>
-                  <span class="badge badge-danger">Danger</span>
-                  <span class="badge bg-black">Primary</span>
+                <div class="d-none d-lg-flex gap-1 flex-nowrap">
+                  <div class="badge btn-dark-blue">Boolean mobile app</div>
+                  <div class="badge btn-dark-blue">Boolean web app</div>
+                  <div class="badge btn-dark-blue">Boolean blog app</div>
                 </div>
               </div>
             </div>
@@ -336,136 +336,178 @@
                 <div class="card-header">
                   <h2>Prossime Classi</h2>
                 </div>
-                <div class="my-table">
-                  <!-- titlerow -->
-                  <div class="my-row d-flex flex-row justify-content-between align-content-center ">
-                    <div class="table-left d-flex flex-row align-items-center">
+                <div class="container mt-5">
+                  <table class="table ">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">
+                          <div class="d-none d-md-block text-nowrap">Data Inizio</div>
+                        </th>
+                        <th scope="col">
+                          <div class="d-none d-md-block">ROI</div>
+                        </th>
+                        <th scope="col">Stato</th>
+                        <th scope="col">Azioni</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="w-100 me-2">
+                          <div class="d-flex align-items-center gap-2 ">
+                            <img src="img/class-avatar.jpg" alt="Immagine" class="mr-2"
+                              style="width: 50px; height: 50px;">
+                            Classe 73
+                          </div>
+                        </td>
+                        <td class="h-100 py-3 me-2">
+                          <div class="d-none d-md-block">15 feb</div>
+                        </td>
+                        <td class="h-100 py-3 me-2">
+                          <div class="d-none d-md-block">5%</div>
+                        </td>
+                        <td>
+                          <div class="btn-group me-2" role="group">
+                            <div class="table-data py-2"><span class="badge bg-success">Done</span></div>
+                          </div>
+                        </td>
+                        <td class="h-100 me-2">
+                          <div class="h-100 d-flex flex-row align-items-center gap-2">
+                            <div class=" border border-dark rounded p-2 ">
+                              <i class="fa-solid fa-pen " style="color: #6c757d; width: fit-content;"></i>
+                            </div>
+                            <div class=" border border-dark rounded p-2 me-2">
+                              <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- seconda colonna -->
+                      <tr>
+                        <td class="w-100 me-2">
+                          <div class="d-flex align-items-center gap-2 ">
+                            <img src="img/class-avatar.jpg" alt="Immagine" class="mr-2"
+                              style="width: 50px; height: 50px;">
+                            Classe 74
+                          </div>
+                        </td>
+                        <td class="h-100 py-3 me-2">
+                          <div class="d-none d-md-block">15 feb</div>
+                        </td>
+                        <td class="h-100 py-3 me-2">
+                          <div class="d-none d-md-block">5%</div>
+                        </td>
+                        <td>
+                          <div class="btn-group me-2" role="group">
+                            <div class="table-data py-2"><span class="badge bg-success">Done</span></div>
+                          </div>
+                        </td>
+                        <td class="h-100 me-2">
+                          <div class="h-100 d-flex flex-row align-items-center gap-2">
+                            <div class=" border border-dark rounded p-2 ">
+                              <i class="fa-solid fa-pen " style="color: #6c757d; width: fit-content;"></i>
+                            </div>
+                            <div class=" border border-dark rounded p-2 me-2">
+                              <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="w-100 me-2">
+                          <div class="d-flex align-items-center gap-2 ">
+                            <img src="img/class-avatar.jpg" alt="Immagine" class="mr-2"
+                              style="width: 50px; height: 50px;">
+                            Classe 75
+                          </div>
+                        </td>
+                        <td class="h-100 py-3 me-2">
+                          <div class="d-none d-md-block">15 feb</div>
+                        </td>
+                        <td class="h-100 py-3 me-2">
+                          <div class="d-none d-md-block">5%</div>
+                        </td>
+                        <td>
+                          <div class="btn-group me-2" role="group">
+                            <div class="table-data py-2"><span class="badge bg-success">Done</span></div>
+                          </div>
+                        </td>
+                        <td class="h-100 me-2">
+                          <div class="h-100 d-flex flex-row align-items-center gap-2">
+                            <div class=" border border-dark rounded p-2 ">
+                              <i class="fa-solid fa-pen " style="color: #6c757d; width: fit-content;"></i>
+                            </div>
+                            <div class=" border border-dark rounded p-2 me-2">
+                              <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="w-100 me-2">
+                          <div class="d-flex align-items-center gap-2 ">
+                            <img src="img/class-avatar.jpg" alt="Immagine" class="mr-2"
+                              style="width: 50px; height: 50px;">
+                            Classe 76
+                          </div>
+                        </td>
+                        <td class="h-100 py-3 me-2">
+                          <div class="d-none d-md-block">15 feb</div>
+                        </td>
+                        <td class="h-100 py-3 me-2">
+                          <div class="d-none d-md-block">5%</div>
+                        </td>
+                        <td>
+                          <div class="btn-group me-2" role="group">
+                            <div class="table-data py-2"><span class="badge bg-success">Done</span></div>
+                          </div>
+                        </td>
+                        <td class="h-100 me-2">
+                          <div class="h-100 d-flex flex-row align-items-center gap-2">
+                            <div class=" border border-dark rounded p-2 ">
+                              <i class="fa-solid fa-pen " style="color: #6c757d; width: fit-content;"></i>
+                            </div>
+                            <div class=" border border-dark rounded p-2 me-2">
+                              <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
 
-                      <span>Nome </span>
-                    </div>
-                    <div class="table-right d-flex flex-row text-nowrap align-items-center px-2 gap-4 me-4">
-                      <div class="table-data">Data Inizio</div>
-                      <div class="table-data">ROI</div>
-                      <div class="table-data">Stato</div>
-                      <div class="table-data d-flex flex-row ">
-                        Azioni
-                      </div>
-                    </div>
-                  </div>
-                  <!-- title-row -->
-                  <div class="my-row d-flex flex-row justify-content-between align-content-center border-bottom-1">
-                    <div class="table-left d-flex flex-row align-items-center">
-                      <div class="img-container h-100 ">
-                        <img class="h-100 me-2" src="img/class-avatar.jpg" alt="" />
-                      </div>
-                      <span>Classe 73</span>
-                    </div>
-                    <div class="table-right d-flex flex-row text-nowrap align-items-center  gap-3">
-                      <div class="table-data">15 feb 2021</div>
-                      <div class="table-data">20%</div>
-                      <div class="table-data"><span class="badge bg-success">Done</span></div>
-                      <div class="table-data d-flex flex-row ">
-                        <div class=" border border-dark rounded p-1 me-2">
-                          <i class="fa-solid fa-pen" style="color: #6c757d; width: fit-content;"></i>
-                        </div>
-                        <div class=" border border-dark rounded p-1 me-2">
-                          <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="my-row d-flex flex-row justify-content-between align-content-center border-bottom-1">
-                    <div class="table-left d-flex flex-row align-items-center">
-                      <div class="img-container h-100 ">
-                        <img class="h-100 me-2" src="img/class-avatar.jpg" alt="" />
-                      </div>
-                      <span>Classe 73</span>
-                    </div>
-                    <div class="table-right d-flex flex-row text-nowrap align-items-center  gap-3">
-                      <div class="table-data">15 feb 2021</div>
-                      <div class="table-data">20%</div>
-                      <div class="table-data"><span class="badge bg-success">Done</span></div>
-                      <div class="table-data d-flex flex-row ">
-                        <div class=" border border-dark rounded p-1 me-2">
-                          <i class="fa-solid fa-pen" style="color: #6c757d; width: fit-content;"></i>
-                        </div>
-                        <div class=" border border-dark rounded p-1 me-2">
-                          <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="my-row d-flex flex-row justify-content-between align-content-center border-bottom-1">
-                    <div class="table-left d-flex flex-row align-items-center">
-                      <div class="img-container h-100 ">
-                        <img class="h-100 me-2" src="img/class-avatar.jpg" alt="" />
-                      </div>
-                      <span>Classe 73</span>
-                    </div>
-                    <div class="table-right d-flex flex-row text-nowrap align-items-center  gap-3">
-                      <div class="table-data">15 feb 2021</div>
-                      <div class="table-data">20%</div>
-                      <div class="table-data"><span class="badge bg-success">Done</span></div>
-                      <div class="table-data d-flex flex-row ">
-                        <div class=" border border-dark rounded p-1 me-2">
-                          <i class="fa-solid fa-pen" style="color: #6c757d; width: fit-content;"></i>
-                        </div>
-                        <div class=" border border-dark rounded p-1 me-2">
-                          <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="my-row d-flex flex-row justify-content-between align-content-center border-bottom-1">
-                    <div class="table-left d-flex flex-row align-items-center">
-                      <div class="img-container h-100 ">
-                        <img class="h-100 me-2" src="img/class-avatar.jpg" alt="" />
-                      </div>
-                      <span>Classe 73</span>
-                    </div>
-                    <div class="table-right d-flex flex-row text-nowrap align-items-center  gap-3">
-                      <div class="table-data">15 feb 2021</div>
-                      <div class="table-data">20%</div>
-                      <div class="table-data"><span class="badge bg-success">Done</span></div>
-                      <div class="table-data d-flex flex-row ">
-                        <div class=" border border-dark rounded p-1 me-2">
-                          <i class="fa-solid fa-pen" style="color: #6c757d; width: fit-content;"></i>
-                        </div>
-                        <div class=" border border-dark rounded p-1 me-2">
-                          <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="my-row d-flex flex-row justify-content-between align-content-center border-bottom-1">
-                    <div class="table-left d-flex flex-row align-items-center">
-                      <div class="img-container h-100 ">
-                        <img class="h-100 me-2" src="img/class-avatar.jpg" alt="" />
-                      </div>
-                      <span>Classe 73</span>
-                    </div>
-                    <div class="table-right d-flex flex-row text-nowrap align-items-center  gap-3">
-                      <div class="table-data">15 feb 2021</div>
-                      <div class="table-data">20%</div>
-                      <div class="table-data"><span class="badge bg-success">Done</span></div>
-                      <div class="table-data d-flex flex-row ">
-                        <div class=" border border-dark rounded p-1 me-2">
-                          <i class="fa-solid fa-pen" style="color: #6c757d; width: fit-content;"></i>
-                        </div>
-                        <div class=" border border-dark rounded p-1 me-2">
-                          <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                      <tr>
+                        <td class="w-100 me-2">
+                          <div class="d-flex align-items-center gap-2 ">
+                            <img src="img/class-avatar.jpg" alt="Immagine" class="mr-2"
+                              style="width: 50px; height: 50px;">
+                            Classe 77
+                          </div>
+                        </td>
+                        <td class="h-100 py-3 me-2">
+                          <div class="d-none d-md-block">15 feb</div>
+                        </td>
+                        <td class="h-100 py-3 me-2">
+                          <div class="d-none d-md-block">5%</div>
+                        </td>
+                        <td>
+                          <div class="btn-group me-2" role="group">
+                            <div class="table-data py-2"><span class="badge bg-success">Done</span></div>
+                          </div>
+                        </td>
+                        <td class="h-100 me-2">
+                          <div class="h-100 d-flex flex-row align-items-center gap-2">
+                            <div class=" border border-dark rounded p-2 ">
+                              <i class="fa-solid fa-pen " style="color: #6c757d; width: fit-content;"></i>
+                            </div>
+                            <div class=" border border-dark rounded p-2 me-2">
+                              <i class="fa-solid fa-trash" style="color: #6c757d; width: fit-content;"></i>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
+
               </div>
               <div class="card my-3">
                 <div class="card-header">
